@@ -8,6 +8,7 @@ body{
     font-size:14px;
     color:hsl(0, 0%, 100%);
     margin:0;
+    
 }
 header{
     background-color:hsl(217, 28%, 15%);
@@ -141,7 +142,7 @@ margin:auto;
     text-align:left;
 }
 .text p{
-    border:2px solid red;
+  
   padding-top:0;
     width:100%;
   
@@ -166,4 +167,47 @@ text-decoration: underline;
 }
 .image img{
     width:100%;
+}
+.testimonials{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:85%;
+   
+margin:auto;
+justify-content:space-between;
+background-image: url("images/bg-quotes.png");
+background-repeat: no-repeat;
+background-position-y: 85px;
+background-position-x: 10px;
+
+
+
+}
+
+.bubble{
+    width:480px;
+    height:260px;
+    margin: 0 20px 0 20px;
+    background-color:hsl(219, 30%, 18%);
+border-radius:5px;
+margin-top:120px;
+}
+.bubble p {
+    width:100%;
+    text-align: left;
+    padding:40px;
+    font-size: 1.5em;
+}
+
+.bubble img{
+  width:10%;
+    border-radius: 50px;
+    margin-left:40px;
+   
+}
+.work{
+   position:relative;
+   left:110px;
+   top:-50px;
 }
