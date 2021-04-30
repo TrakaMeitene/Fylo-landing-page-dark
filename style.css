@@ -52,20 +52,25 @@ a:hover{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
-    
+
 }
 .intro img{
     width:50%;
 
 }
 h1{
-    font-family: 'Raleway', sans-serif;
-    color:hsl(0, 0%, 100%);
     font-weight:700;
     font-size:3.6em;
+    width:50%; 
+}
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    color:hsl(0, 0%, 100%);
     text-align:center;
-    width:50%;
     padding-top:40px;
+}
+h2{
+    font-size:1.9em;
 }
 p{
 width:34%;
@@ -91,4 +96,33 @@ cursor:pointer;
 }
 button:hover{
     background-color:hsl(176, 68%, 64%);
+}
+
+.flex{
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+width:60%;
+margin:auto;
+
+}
+.logs{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width:450px;
+    
+    margin-bottom:60px;
+}
+
+.logs img{
+    width:30%;
+}
+
+.logs p{
+   width:100%;
+    font-size:1.4em;
+    padding-top:20px;
 }
