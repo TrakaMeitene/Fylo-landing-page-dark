@@ -1,13 +1,13 @@
 *{
     box-sizing:border-box;
     margin:0;
+    padding:0;
 }
 body{
     background-color: hsl(218, 28%, 13%);
     font-family: 'Open Sans', sans-serif;
     font-size:14px;
     color:hsl(0, 0%, 100%);
-    margin:0;
     
 }
 header{
@@ -210,4 +210,111 @@ margin-top:120px;
    position:relative;
    left:110px;
    top:-50px;
+}
+.signup{
+background-color: hsl(217, 28%, 15%);
+width:60%;
+margin:auto;
+border-radius:10px;
+margin-top:200px;
+padding-bottom:70px;
+margin-bottom:-100px;
+position:relative;
+}
+.signup h1, .signup p{
+    width:90%;
+    text-align: center;
+    margin:auto;
+}
+input{
+    width:500px;
+    height:60px;
+    border-radius:30px;
+    border:none;
+    margin-top:40px;
+   margin-right:30px;
+   text-align: center;
+   margin-left:12%;
+}
+footer{
+    width:100%;
+    height:auto;
+    background-color: hsl(216, 53%, 9%);
+    padding: 150px 20px 20px 60px;
+   
+  display:flex;
+  flex-direction:row;
+
+}
+
+footer p{
+    text-align:left;
+    padding-top:0px;
+    width:auto;
+    padding-left:30px
+}
+
+
+.location{
+    width:30%;
+    margin-left:60px;
+   
+}
+.location img:nth-child(2){
+    display:block;
+    position:relative;
+    top:25px;
+    
+}
+.contacts{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    padding:100px 120px 0px 120px;
+}
+.contacts img{
+    width:8%;
+  position:relative;
+  top:30px;
+right:40px;
+}
+
+.list li, .list2 li{
+float:none;
+font-size:18px;
+}
+
+.list li a:hover, .list2 li a:hover{
+
+        text-decoration: none;
+}
+
+.list, .list2{
+    width:10%;
+    display:flex;
+    align-items: flex-start;
+    padding-top:100px;
+}
+.soc{
+    margin-top:100px;
+}
+.soc a{
+    padding:10px;
+}
+
+.soc a i:hover{
+    color:hsl(176, 68%, 64%);
+    border-color: hsl(176, 68%, 64%);;
+}
+.soc i {
+    padding:15px;
+    border:1px solid white;
+    border-radius:50px;
+}
+#facebook{
+    padding:15px 20px 15px 20px;
+}
+#instagram{
+        padding-left: 17px;
+        padding-right: 17px;
 }
