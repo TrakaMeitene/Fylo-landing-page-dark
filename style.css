@@ -221,6 +221,7 @@ margin-top:200px;
 padding-bottom:70px;
 margin-bottom:-100px;
 position:relative;
+box-shadow: 5px 10px 20px black;
 }
 .signup h1, .signup p{
     width:90%;
