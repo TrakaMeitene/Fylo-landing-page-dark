@@ -313,6 +313,7 @@ font-size:18px;
         padding-right: 17px;
 }
 
+
 @media screen and (max-width:600px){
 
     header img {
@@ -422,46 +423,48 @@ right: 10px;
 
 
 }
-
 @media screen and (max-width:1440px){
     
-.flex{
-   
-    justify-content: space-around;
-    width:80%;
-    margin:auto;
+    .flex{
+       
+        justify-content: space-around;
+        width:80%;
+        margin:auto;
+        
+        }
+        .image, .text h1{
+            width:100%;
+        }
+       
+        .bubble{
+            width: 30%;
+    height: auto;
+        }
+        input, .signup button{
+            margin-left:20%;
+        }
+        .signup button{
+            width:500px;
+        }
+        .fa-2x{
+            font-size: 1em;
+        }
+    }
+
     
-    }
-    .image, .text h1{
-        width:100%;
-    }
-   
-    .bubble{
-        width: 30%;
-height: auto;
-    }
-    input, .signup button{
-        margin-left:20%;
-    }
-    .signup button{
-        width:500px;
-    }
-    .fa-2x{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width:900px){
+@media screen and (max-width:1024px){
     ul li, p{
         font-size:1.4em;
     }
-   .productive, .testimonials{
+   .productive, .testimonials, footer{
        flex-direction:column;
    }
    
-   .image, .text{
-       width:80%;
+   .image, .text, .signup, .location, .list , .list2{
+       width:80%; 
+   }
+   .image, .text, .location, .list, .list2{
        margin:auto;
-       
    }
    .text{
        padding-left:0px;
@@ -469,12 +472,25 @@ height: auto;
    .productive{
        width:100%;
    }
-  
    .bubble{
        width:90%;
       margin:40px auto 0 auto;
    }
    .bubble:first-child{
     margin-top:120px;
+}
+input, .signup button{
+    margin-left:9%;
+}
+.contacts img{
+    width:5%;
+    top:25%;
+}
+.contacts, .list, .list2{
+    padding-top:40px;
+}
+.soc{
+    margin:40px auto 0 auto;
+    
 }
 }
