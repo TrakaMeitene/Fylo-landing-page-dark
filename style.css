@@ -331,7 +331,9 @@ margin-top:-20px;
 
 
 @media screen and (max-width:1440px){
-    
+    .intro img{
+        width:50%;
+    }
     .flex{
        
         justify-content: space-around;
@@ -357,6 +359,12 @@ margin-top:-20px;
         }
         #error{
             padding-left:0;
+        }
+        .signup{
+            width:72%;
+        }
+        .bubble p{
+            font-size: 1.2em;
         }
     }
 
