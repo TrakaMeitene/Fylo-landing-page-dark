@@ -7,48 +7,55 @@ body{
     background-color: hsl(218, 28%, 13%);
     font-family: 'Open Sans', sans-serif;
     font-size:14px;
-    color:hsl(0, 0%, 100%);
     
 }
-header{
+header, .intro, .logs p, .text p, 
+.image, .image img,.bubble p, footer,
+.text h1, .image, .testimonials,.list, .list2{
+    width:100%;
+}
+header, .intro{
     background-color:hsl(217, 28%, 15%);
-   width:100%;
-  height:130px;
-   padding:4% 4% 0 4%;
+}
+header{
+    height:130px;
+    padding:4% 4% 0 4%;
 }
 header img{
     float:left;
     
 }
-
+.soc a, ul li{
+    padding:10px;
+}
+ul li, p{
+    font-weight:400;
+}
 ul li {
     list-style-type: none;
     float: right;
-    padding:10px;
-    font-weight:400;
     font-size:1.3vw;
     font-family: 'Raleway', sans-serif;
 }
-
+a, body,h1, h2, button{
+    color:hsl(0, 0%, 100%);
+}
 a{
     text-decoration: none;
-    color:hsl(0, 0%, 100%);
 }
 a:hover{
     font-weight:700;
     text-decoration: underline;
 }
-
-.intro{
-    width:100%;
+.intro, footer, .bubble{
     height:auto;
-    display:flex;
-    flex-direction:column;
+}
+.intro{
+   
     justify-content: center;
     align-items:center;
     padding-bottom:100px;
     padding-top:60px;
-    background-color:hsl(217, 28%, 15%);
     background-image: url("images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -56,35 +63,43 @@ a:hover{
 
 }
 
-.intro img{
+.intro img, h1{
     width:60%;
 
 }
 h1{
     font-weight:700;
     font-size:3vw;
-    width:60%; 
+}
+h1, h2, p{
+    text-align:center;
 }
 h1, h2{
     font-family: 'Raleway', sans-serif;
-    color:hsl(0, 0%, 100%);
-    text-align:center;
-    padding-top:40px;
 }
 h2{
     font-size:1.9em;
 }
+p, .productive, h1, h2{
+    padding-top:40px;
+}
 p{
 width:54%;
-text-align:center;
 font-size:1.5vw;
-font-weight:400;
 color:hsl(0, 0%, 80%);
-padding-top:40px;
 }
-.dark{
+.dark, .logs, .contacts, .intro{
     display:flex;
     flex-direction: column;
+}
+
+.flex, .productive, .testimonials, footer {
+    display:flex;
+    flex-direction:row;
+}
+
+.dark{
+   
 align-items: center;
 margin-bottom:120px;
 }
@@ -95,7 +110,6 @@ button{
     height:60px;
     border-radius:30px;
 background-color:hsl(198, 60%, 50%);
-color:hsl(0, 0%, 100%);
 font-family: 'Raleway', sans-serif;
 font-size:1.1em;
 font-weight: 700;
@@ -107,8 +121,6 @@ button:hover{
 }
 
 .flex{
-display:flex;
-flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
 width:60%;
@@ -116,8 +128,6 @@ margin:auto;
 
 }
 .logs{
-    display:flex;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     width:450px;
@@ -130,7 +140,6 @@ margin:auto;
 }
 
 .logs p{
-   width:100%;
     font-size:1.4em;
     padding-top:20px;
 }
@@ -138,9 +147,6 @@ margin:auto;
 .productive{
     width:90%;
     margin:auto;
-   display:flex;
-   flex-direction:row;
- padding-top:40px;
 }
 .text{
     padding-left:80px;
@@ -151,7 +157,6 @@ margin:auto;
 .text p{
   
   padding-top:0;
-    width:100%;
   
 }
 
@@ -169,15 +174,9 @@ text-decoration: underline;
     color:hsl(0, 0%, 100%);
     font-weight:400;
 }
-.image{
-    width:100%;
-}
-.image img{
-    width:100%;
-}
+
+
 .testimonials{
-    display:flex;
-    flex-direction: row;
     width:90%;
    
 margin:auto;
@@ -200,7 +199,6 @@ border-radius:5px;
 margin-top:120px;
 }
 .bubble p {
-    width:100%;
     text-align: left;
     padding:40px;
     font-size: 1.5em;
@@ -243,13 +241,8 @@ input{
    margin-left:12%;
 }
 footer{
-    width:100%;
-    height:auto;
     background-color: hsl(216, 53%, 9%);
     padding: 150px 20px 20px 0px;
-   
-  display:flex;
-  flex-direction:row;
 
 }
 
@@ -273,8 +266,7 @@ footer p{
     
 }
 .contacts{
-    display:flex;
-    flex-direction:column;
+
     justify-content: flex-start;
     padding:100px 40px 0px 100px;
 }
@@ -304,9 +296,7 @@ font-size:18px;
 .soc{
     margin-top:100px;
 }
-.soc a{
-    padding:10px;
-}
+
 
 .soc a i:hover{
     color:hsl(176, 68%, 64%);
@@ -343,49 +333,41 @@ padding-bottom:0;
 padding-top:0;
 }
 
-.intro img{
-    width:90%;
-}
+
 .intro div p{
     margin:auto;
 }
 .dark {
 display:flex;
-flex-direction: column;
 align-items: center;
 background-color:  hsl(218, 28%, 13%);
 margin-bottom:0;
-
 }
 button{
     margin-bottom:100px;
 }
-h1{
+h1, p, .intro img{
     width:90%;
+}
+h1{
     font-size:1.8em;
     line-height: 1.5;
     padding-top:0;
 }
 p{
-    width:90%;
     font-size:1.2em;
     padding-top:20px;
 }
 .flex{
     width:85%;
 }
-.productive{
+.productive, .dark{
     flex-direction:column;
 }
-.image{
-    width:100%;
-}
+
 .text{
     padding-top:20px;
     padding-left:0;
-}
-.text h1{
-    width:100%;
 }
 .bubble p{
     padding:20px;
@@ -396,15 +378,12 @@ p{
 }
 .bubble{
     margin-top:40px;
-   height:auto;
 }
 .work{
     left:90px;
     top:-40px;
 }
-.testimonials{
-    width:100%;
-}
+
 .bubble:first-child{
     margin-top:120px;
 }
@@ -413,13 +392,11 @@ p{
     padding-top:50px;
   padding-bottom:0px;
 }
-input{
-    width:80%;
+input{  
 height:60px;
-margin-left:10%;
 margin-right:10%;
 }
-.signup button{
+.signup button, input{
     margin-left:10%;
     width:80%;
 }
@@ -439,7 +416,6 @@ footer{
 right: 10px;
 }
 .list, .list2{
-    width:100%;
     padding-top:40px;
 }
 .list ul li, .list2 ul li{
@@ -460,26 +436,49 @@ right: 10px;
     margin:auto;
     
     }
-    .image{
+    .image, .text h1{
         width:100%;
     }
-    .text h1{
-        width:100%;
-       
-    }
+   
     .bubble{
         width: 30%;
 height: auto;
     }
-    input{
+    input, .signup button{
         margin-left:20%;
     }
     .signup button{
         width:500px;
-        margin-left:20%;
-
     }
     .fa-2x{
         font-size: 1em;
     }
+}
+@media screen and (max-width:900px){
+    ul li, p{
+        font-size:1.4em;
+    }
+   .productive, .testimonials{
+       flex-direction:column;
+   }
+   
+   .image, .text{
+       width:80%;
+       margin:auto;
+       
+   }
+   .text{
+       padding-left:0px;
+   }
+   .productive{
+       width:100%;
+   }
+  
+   .bubble{
+       width:90%;
+      margin:40px auto 0 auto;
+   }
+   .bubble:first-child{
+    margin-top:120px;
+}
 }
