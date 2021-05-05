@@ -355,6 +355,9 @@ margin-top:-20px;
         .fa-2x{
             font-size: 1em;
         }
+        #error{
+            padding-left:0;
+        }
     }
 
     
@@ -518,6 +521,11 @@ right: 10px;
 .list ul li, .list2 ul li{
     margin-top:0px;
 }
-
+#error{
+    margin-top:-90px;
+    padding-bottom:20px;
+    text-align: center;
+   padding-left:0;
+}
 
 }
