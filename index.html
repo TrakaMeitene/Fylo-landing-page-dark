@@ -12,7 +12,7 @@
   
 <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
-<body>
+<body onload='document.form.email()'>
 <header>
     <img src="images/logo.svg" alt="logo">
         <ul>
@@ -104,8 +104,9 @@
     <span><h1>  Get early access today</h1>
     <p> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
         questions, our support team would be happy to help you.</p>
-        <form id="form"><input type="email"  id="email" name="email"  required/>  <button type="submit" form="form" value="Submit"> Get Started For Free</button></form>
-</div>
+        <form id="form" action="#" name="form" ><input type="email"  id="email" name="email"  required/>  <button type="submit" form="form" name="validate" value="Validate"  onclick="ValidateEmail(document.form.email)"> Get Started For Free</button></form>
+<p id="error"></p>
+    </div>
 
 <footer>
     <div class="location"><img src="images/logo.svg" alt="logo" style="margin-bottom:40px;">
@@ -135,6 +136,24 @@
    <a href="#"><i id="instagram" class="fab fa-instagram fa-2x"></i></a>
 </div>
 </footer>
+<script>
+  function ValidateEmail(inputText)
+{
+var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{    
+document.form.email();
+return true;
+}
+else
+{
+    document.getElementById("error").innerHTML = "Please enter a valid email adress";   
+document.form.email();
+return false;
+}
+}
+    </script>
+
 <script src="https://kit.fontawesome.com/1eee90d226.js" crossorigin="anonymous"></script>
 </body>
 </html>
